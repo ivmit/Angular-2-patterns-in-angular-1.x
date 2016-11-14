@@ -1,0 +1,48 @@
+{
+  "name": "ng-2-architecture",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "SET NODE_ENV=test&&karma start",
+    "compile": "rimraf dist && webpack && cp index.html dist/index.html",
+    "start": "SET NODE_ENV=development&&npm run compile&&webpack-dev-server --content-base dist/",
+    "build": "SET NODE_ENV=production&&npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nony1992/Angular-2-patterns-in-angular-1.x.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nony1992/Angular-2-patterns-in-angular-1.x/issues"
+  },
+  "homepage": "https://github.com/nony1992/Angular-2-patterns-in-angular-1.x#readme",
+  "devDependencies": {
+    "angular-hot-reloader": "0.0.2",
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "ng-annotate-loader": "^0.2.0",
+    "node-sass": "^3.12.2",
+    "raw-loader": "^0.5.1",
+    "resolve-url-loader": "^1.6.0",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
+    "bootstrap-css-only": "^3.3.7",
+    "normalize.css": "^5.0.0"
+  }
+}
