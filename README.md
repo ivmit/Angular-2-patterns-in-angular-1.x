@@ -1,1 +1,1 @@
-# Angular-2-patterns-in-angular-1.x
+# Angular-2-patterns-in-Angular-1.x
