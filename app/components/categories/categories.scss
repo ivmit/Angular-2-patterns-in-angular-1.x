@@ -1,5 +1,29 @@
-$primary-color: #333;
-
-.category-item {
-  color: $primary-color;
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EEE;
 }
+
+.logo {
+  padding: 20px;
+}
+
+.sidebar {
+  //display: none;
+  padding-left: 0;
+  padding-right: 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    &.active a {
+      background-color: #D5D8D8;
+      color: #2B2828;
+      text-decoration: none;
+    }
+  }
+
+}
+
